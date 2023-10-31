@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import csv
 import sys
-import io
 from dataclasses import dataclass
 from enum import Enum
 from html.parser import HTMLParser
