@@ -5,7 +5,7 @@ usage() {
     printf "usage: %s [dat_url]\n" "$0" >&2
 }
 
-if [[ -z "$1" ]]; then
+if [ -z "$1" ]; then
     usage
     exit 1;
 fi
