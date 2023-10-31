@@ -65,9 +65,6 @@ if __name__ == "__main__":
     # Avoid `BrokenPipeError` when running `... | head`
     signal(SIGPIPE, SIG_DFL)
 
-    # Avoid `UnicodeDecodeError`
-    if isinstance(sys.stdin, io.TextIOWrapper):
-        sys.stdin.reconfigure(encoding="shift-jis")
 
     parser = BBSMenuParser()
     parser.feed(sys.stdin.read())
