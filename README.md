@@ -24,7 +24,7 @@ git clone & cd
 ### 板一覧を取得する
 
 ```shell-session
-curl menu.5ch.net/bbsmenu.html | python contrib/mkbbsmenu.py
+curl menu.5ch.net/bbsmenu.html | iconv -f sjis -t utf8 | python contrib/mkbbsmenu.py
 ```
 
 ### 板にあるスレタイを取得する
